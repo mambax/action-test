@@ -11,7 +11,7 @@ jobs:
       - uses: ./test
 
   runner:
-    runs-on: [ aws ]
+    runs-on: ubuntu-latest
     steps:
       - run: |
           pwd
