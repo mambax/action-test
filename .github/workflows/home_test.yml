@@ -1,0 +1,19 @@
+name: Log context
+
+on:
+  workflow_dispatch:
+
+jobs:
+  in-container:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./test
+
+  runner:
+    runs-on: [ aws ]
+    steps:
+      - run: |
+          pwd
+          echo $HOME
+          ls -la $HOME

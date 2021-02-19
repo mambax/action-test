@@ -1,0 +1,6 @@
+# action.yml
+name: 'Pwd'
+description: 'Log pwd'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
